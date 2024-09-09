@@ -2,25 +2,23 @@
 Handling events
 ===============
 
-*aiogram* includes Dispatcher mechanism.
-Dispatcher is needed for handling incoming updates from Telegram.
+*aiogram* включає в себе механізм Dispatcher. 
+Dispatcher потрібен для обробки вхідних оновлень з Telegram.
 
-With dispatcher you can do:
+За допомогою Dispatcher ви можете:
 
-- Handle incoming updates;
-- Filter incoming events before it will be processed by specific handler;
-- Modify event and related data in middlewares;
-- Separate bot functionality between different handlers, modules and packages
+- Обробляти вхідні оновлення;
+- Фільтрувати вхідні події перед тим, як вони будуть оброблені певним обробником;
+- Змінювати події та пов'язані з ними дані в проміжних модулях;
+- Розділяти функціонал бота між різними обробниками, модулями та пакетами.
 
-Dispatcher is also separated into two entities - Router and Dispatcher.
-Dispatcher is subclass of router and should be always is root router.
+Dispatcher також розділений на дві сутності - Router та Dispatcher.
+Dispatcher є підкласом маршрутизатора і завжди повинен бути кореневим маршрутизатором.
 
-Telegram supports two ways of receiving updates:
-
-- :ref:`Webhook <webhook>` - you should configure your web server to receive updates from Telegram;
-- :ref:`Long polling <long-polling>` - you should request updates from Telegram.
-
-So, you can use both of them with *aiogram*.
+Telegram підтримує два способи отримання оновлень:
+- :ref:`Webhook <webhook>` - ви повинні налаштувати свій веб-сервер на отримання оновлень від Telegram;
+- :ref:`Long polling <long-polling>` - ви повинні запитувати оновлення від Telegram.
+Отже, ви можете використовувати обидва способи з *aiogram*.
 
 .. toctree::
 
